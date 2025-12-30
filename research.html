@@ -4,334 +4,258 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Intelation — Europe Market Research (EU + UK)</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --panel: #f7f7f7;
-      --text: #1a1a1a;
-      --muted: #555555;
-      --border: #d9d9d9;
-      --link: #0b57d0;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1.5;
-    }
-
-    a { color: var(--link); }
-
-    header {
-      border-bottom: 1px solid var(--border);
-      background: #ffffff;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    h1 { margin: 0 0 8px; font-size: 26px; }
-    h2 { margin: 28px 0 10px; font-size: 20px; }
-    h3 { margin: 20px 0 8px; font-size: 16px; }
-
-    .subtle { color: var(--muted); }
-
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 10px 0 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    .nav a {
-      text-decoration: none;
-      padding: 6px 10px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--panel);
-      color: var(--text);
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-
-    @media (min-width: 900px) {
-      .grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #ffffff;
-    }
-
-    th, td {
-      border: 1px solid var(--border);
-      padding: 8px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background: #f2f2f2;
-      font-weight: 600;
-    }
-
-    .small { font-size: 12px; color: var(--muted); }
-
-    .nowrap { white-space: nowrap; }
-
-    footer {
-      border-top: 1px solid var(--border);
-      margin-top: 30px;
-      padding: 18px 0;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .section-anchor {
-      scroll-margin-top: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
     <div class="container">
-      <h1>Intelation — Europe Market Research (EU + UK)</h1>
-      <div class="subtle">Research workspace page. Last updated: 2025-12-30.</div>
-      <ul class="nav" aria-label="Page sections">
-        <li><a href="#objective">Objective</a></li>
-        <li><a href="#framework">Country Selection Framework</a></li>
-        <li><a href="#shortlist">Candidate Countries</a></li>
-        <li><a href="#scoring">Scoring Table</a></li>
-        <li><a href="#revenue">Revenue Streams</a></li>
-        <li><a href="#country-notes">Country Notes</a></li>
-        <li><a href="#sources">Sources</a></li>
-      </ul>
+      <div class="header-top">
+        <div>
+          <h1>Intelation — Europe Market Research (EU + UK)</h1>
+          <div class="subtle">Country shortlisting workspace. Last updated: 2025-12-30.</div>
+        </div>
+        <div class="pill">Light theme</div>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Research tabs">
+        <button class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="tab-final" id="tab-final-btn">Overview</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-business" id="tab-business-btn">Business Establishment</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-visa" id="tab-visa-btn">Visa Options</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-funding" id="tab-funding-btn">Funding Access</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-revenue" id="tab-revenue-btn">Revenue Streams</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-country-notes" id="tab-country-notes-btn">Country Notes</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-sources" id="tab-sources-btn">Sources</button>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section id="objective" class="section-anchor">
-      <h2>Objective</h2>
+    <!-- Final Selection Tab -->
+    <section id="tab-final" class="tab-panel" role="tabpanel" aria-labelledby="tab-final-btn">
+      <h2>Research Overview</h2>
+      
       <div class="card">
-        Assess the feasibility and best path for establishing Intelation in the European market (EU + UK), including identifying the highest-potential customer segments, priority countries, regulatory and competitive considerations, and the go-to-market approach required to enter and scale.
+        <div><strong>Purpose:</strong> This workspace tracks research across three criteria (Business Establishment, Visa Options, Funding Access) for EU + UK markets.</div>
+        <div class="hint">Use the tabs above to navigate between different research areas. Record findings in the Country Notes tab.</div>
       </div>
-    </section>
 
-    <section id="framework" class="section-anchor">
-      <h2>Country Selection Framework</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Criteria (equal weight)</h3>
-          <ol>
-            <li><strong>Business establishment</strong>: setup/operating friction, cost base, hiring practicality.</li>
-            <li><strong>Visa options</strong>: realistic routes for Indian staff (founders and early hires), timelines, renewability.</li>
-            <li><strong>Funding access</strong>: depth of preseed/seed ecosystem fit for privacy/compliance/enterprise SaaS.</li>
-          </ol>
-          <div class="small">Scoring: each criterion is scored 0–5 per country.</div>
+      <div class="card">
+        <h3>Candidate Countries</h3>
+        <div class="country-list">
+          <div class="country-item">United Kingdom</div>
+          <div class="country-item">Ireland</div>
+          <div class="country-item">Netherlands</div>
+          <div class="country-item">Germany</div>
+          <div class="country-item">France</div>
+          <div class="country-item">Sweden</div>
+          <div class="country-item">Denmark</div>
+          <div class="country-item">Spain</div>
+          <div class="country-item">Portugal</div>
+          <div class="country-item">Poland</div>
+          <div class="country-item">Estonia</div>
+          <div class="country-item">Belgium</div>
+          <div class="country-item">Luxembourg</div>
         </div>
+      </div>
 
-        <div class="card">
-          <h3>Formula</h3>
-          <div>
-            <div><strong>Total Score</strong> = 0.33 × B + 0.33 × V + 0.33 × F</div>
-            <div class="small">B = Business establishment score, V = Visa options score, F = Funding access score.</div>
+      <div class="card">
+        <h3>Research Criteria</h3>
+        <div class="criteria-grid">
+          <div class="criteria-item">
+            <strong>Business Establishment</strong>
+            <div class="small">Company setup, operating costs, hiring ease</div>
           </div>
-          <h3>Outputs</h3>
-          <ul>
-            <li>Ranked list across a candidate set.</li>
-            <li>Top 5–8 countries selected for deep-dive research.</li>
-            <li>Watchlist countries for lighter tracking.</li>
-          </ul>
+          <div class="criteria-item">
+            <strong>Visa Options</strong>
+            <div class="small">Immigration routes for Indian staff</div>
+          </div>
+          <div class="criteria-item">
+            <strong>Funding Access</strong>
+            <div class="small">Preseed/seed ecosystem strength</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="shortlist" class="section-anchor">
-      <h2>Candidate Countries (initial list)</h2>
+    <!-- Business Establishment Tab -->
+    <section id="tab-business" class="tab-panel" role="tabpanel" aria-labelledby="tab-business-btn" hidden>
+      <h2>Business Establishment</h2>
+      
       <div class="card">
-        <p class="subtle">Edit this list as we refine the candidate set.</p>
-        <table aria-label="Candidate country list">
-          <thead>
-            <tr>
-              <th class="nowrap">Country</th>
-              <th>Notes (why include / what to validate)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>United Kingdom</td><td></td></tr>
-            <tr><td>Ireland</td><td></td></tr>
-            <tr><td>Netherlands</td><td></td></tr>
-            <tr><td>Germany</td><td></td></tr>
-            <tr><td>France</td><td></td></tr>
-            <tr><td>Sweden</td><td></td></tr>
-            <tr><td>Denmark</td><td></td></tr>
-            <tr><td>Spain</td><td></td></tr>
-            <tr><td>Portugal</td><td></td></tr>
-            <tr><td>Poland</td><td></td></tr>
-            <tr><td>Estonia</td><td></td></tr>
-            <tr><td>Belgium</td><td></td></tr>
-            <tr><td>Luxembourg</td><td></td></tr>
-          </tbody>
-        </table>
+        <div class="subtle">Research focus: company setup friction, operating costs, ease of hiring, and regulatory environment.</div>
+      </div>
+
+      <div class="card">
+        <h3>Candidate Countries</h3>
+        <div class="country-list">
+          <div class="country-item">United Kingdom</div>
+          <div class="country-item">Ireland</div>
+          <div class="country-item">Netherlands</div>
+          <div class="country-item">Germany</div>
+          <div class="country-item">France</div>
+          <div class="country-item">Sweden</div>
+          <div class="country-item">Denmark</div>
+          <div class="country-item">Spain</div>
+          <div class="country-item">Portugal</div>
+          <div class="country-item">Poland</div>
+          <div class="country-item">Estonia</div>
+          <div class="country-item">Belgium</div>
+          <div class="country-item">Luxembourg</div>
+        </div>
       </div>
     </section>
 
-    <section id="scoring" class="section-anchor">
-      <h2>Country Scoring Table</h2>
+    <!-- Visa Options Tab -->
+    <section id="tab-visa" class="tab-panel" role="tabpanel" aria-labelledby="tab-visa-btn" hidden>
+      <h2>Visa Options</h2>
+      
       <div class="card">
-        <p class="subtle">Enter 0–5 scores and a short justification per criterion. Total can be calculated manually or later automated.</p>
-        <table aria-label="Country scoring table">
-          <thead>
-            <tr>
-              <th class="nowrap">Country</th>
-              <th class="nowrap">B (0–5)</th>
-              <th>Business establishment notes</th>
-              <th class="nowrap">V (0–5)</th>
-              <th>Visa options notes</th>
-              <th class="nowrap">F (0–5)</th>
-              <th>Funding notes</th>
-              <th class="nowrap">Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>United Kingdom</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Ireland</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Netherlands</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Germany</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>France</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Sweden</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Denmark</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Spain</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Portugal</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Poland</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Estonia</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Belgium</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td>Luxembourg</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="subtle">Research focus: sponsor practicality, processing timelines, renewability, and path to long-term residence for Indian staff.</div>
+      </div>
+
+      <div class="card">
+        <h3>Candidate Countries</h3>
+        <div class="country-list">
+          <div class="country-item">United Kingdom</div>
+          <div class="country-item">Ireland</div>
+          <div class="country-item">Netherlands</div>
+          <div class="country-item">Germany</div>
+          <div class="country-item">France</div>
+          <div class="country-item">Sweden</div>
+          <div class="country-item">Denmark</div>
+          <div class="country-item">Spain</div>
+          <div class="country-item">Portugal</div>
+          <div class="country-item">Poland</div>
+          <div class="country-item">Estonia</div>
+          <div class="country-item">Belgium</div>
+          <div class="country-item">Luxembourg</div>
+        </div>
       </div>
     </section>
 
-    <section id="revenue" class="section-anchor">
+    <!-- Funding Access Tab -->
+    <section id="tab-funding" class="tab-panel" role="tabpanel" aria-labelledby="tab-funding-btn" hidden>
+      <h2>Funding Access</h2>
+      
+      <div class="card">
+        <div class="subtle">Research focus: investor density, accelerator strength, typical ticket sizes, and ecosystem fit for privacy/compliance/enterprise SaaS.</div>
+      </div>
+
+      <div class="card">
+        <h3>Candidate Countries</h3>
+        <div class="country-list">
+          <div class="country-item">United Kingdom</div>
+          <div class="country-item">Ireland</div>
+          <div class="country-item">Netherlands</div>
+          <div class="country-item">Germany</div>
+          <div class="country-item">France</div>
+          <div class="country-item">Sweden</div>
+          <div class="country-item">Denmark</div>
+          <div class="country-item">Spain</div>
+          <div class="country-item">Portugal</div>
+          <div class="country-item">Poland</div>
+          <div class="country-item">Estonia</div>
+          <div class="country-item">Belgium</div>
+          <div class="country-item">Luxembourg</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Revenue Streams Tab -->
+    <section id="tab-revenue" class="tab-panel" role="tabpanel" aria-labelledby="tab-revenue-btn" hidden>
       <h2>Potential Revenue Streams (hypotheses)</h2>
+      
       <div class="card">
+        <p class="subtle">Based on Intelation's capabilities and preseed status, these are potential revenue models for the European market:</p>
         <ul>
-          <li>SaaS subscriptions for the privacy platform (tiered by features/scale).</li>
-          <li>Usage-based pricing for privacy processing (credits tied to API calls, records, or data volume).</li>
-          <li>Enterprise licensing for advanced privacy-preserving computation with support and SLAs.</li>
-          <li>Advisory retainers and fixed-fee projects (GDPR readiness, cross-border compliance, gap analysis, market entry compliance).</li>
-          <li>Paid onboarding and implementation packages (integration, deployment hardening, workflow embedding).</li>
-          <li>Training and enablement (workshops, role-based training, certifications).</li>
-          <li>Partner/channel revenue (referrals and delivery partnerships with consultancies, law firms, SIs).</li>
+          <li><strong>SaaS subscriptions</strong> for the privacy platform (tiered by features/scale).</li>
+          <li><strong>Usage-based pricing</strong> for privacy processing (credits tied to API calls, records, or data volume).</li>
+          <li><strong>Enterprise licensing</strong> for advanced privacy-preserving computation with support and SLAs.</li>
+          <li><strong>Advisory retainers</strong> and fixed-fee projects (GDPR readiness, cross-border compliance, gap analysis, market entry compliance).</li>
+          <li><strong>Paid onboarding</strong> and implementation packages (integration, deployment hardening, workflow embedding).</li>
+          <li><strong>Training and enablement</strong> (workshops, role-based training, certifications).</li>
+          <li><strong>Partner/channel revenue</strong> (referrals and delivery partnerships with consultancies, law firms, SIs).</li>
         </ul>
       </div>
     </section>
 
-    <section id="country-notes" class="section-anchor">
+    <!-- Country Notes Tab -->
+    <section id="tab-country-notes" class="tab-panel" role="tabpanel" aria-labelledby="tab-country-notes-btn" hidden>
       <h2>Country Notes (working area)</h2>
+      
       <div class="grid">
         <div class="card">
-          <h3>Template</h3>
-          <div class="small">Copy/paste this block for each country once it enters deep-dive.</div>
-          <pre style="white-space: pre-wrap; margin: 0;">Country:
+          <h3>Research template</h3>
+          <div class="small">Use this template for each country in the final selection:</div>
+          <pre>Country: [Name]
 
 Business establishment:
-- Company registration:
-- Costs:
-- Hiring:
+- Company registration: [time, cost, complexity]
+- Operating costs: [typical salaries, office, services]
+- Hiring: [talent availability, contractor ecosystem]
+- Business environment: [regulatory friendliness]
 
 Visa options (Indian staff):
-- Main visa routes:
-- Sponsor needs:
-- Typical timeline:
+- Main visa routes: [skilled worker, startup visa, etc.]
+- Sponsor requirements: [process, obligations]
+- Typical timeline: [processing time]
+- Renewability: [extension process, settlement path]
 
 Funding access:
-- Active investors:
-- Accelerators:
-- Typical ticket sizes:
+- Active investors: [key VCs/angels in privacy/enterprise SaaS]
+- Accelerators: [relevant programs]
+- Typical ticket sizes: [preseed/seed range]
+- Ecosystem strength: [rating, notes]
 
-Notes:
-- Risks:
-- Quick recommendation:</pre>
+Recommendations:
+- Key advantages:
+- Main risks:
+- Overall fit: [Low/Medium/High]</pre>
         </div>
 
         <div class="card">
           <h3>Deep-dive queue</h3>
-          <p class="subtle">Once countries are scored, list the top 5–8 here in order.</p>
+          <div class="subtle">Once the final selection is agreed, list the priority countries here:</div>
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>[Country name] - [brief rationale]</li>
+            <li>[Country name] - [brief rationale]</li>
+            <li>[Country name] - [brief rationale]</li>
+            <li>[Country name] - [brief rationale]</li>
+            <li>[Country name] - [brief rationale]</li>
           </ol>
         </div>
       </div>
     </section>
 
-    <section id="sources" class="section-anchor">
-      <h2>Sources</h2>
+    <!-- Sources Tab -->
+    <section id="tab-sources" class="tab-panel" role="tabpanel" aria-labelledby="tab-sources-btn" hidden>
+      <h2>Sources & References</h2>
+      
       <div class="card">
+        <h3>Company information</h3>
         <ul>
-          <li><a href="https://www.intelation.com/" target="_blank" rel="noreferrer">intelation.com</a> (company site)</li>
+          <li><a href="https://www.intelation.com/" target="_blank" rel="noreferrer">Intelation.com</a> — Company website</li>
+          <li><a href="https://www.intelation.com/about" target="_blank" rel="noreferrer">About Intelation</a> — Mission and current status</li>
         </ul>
-        <div class="small">As we research each country, add official government and investor ecosystem sources here.</div>
+
+        <h3>Research sources</h3>
+        <div class="hint">Add official sources as you research each country:</div>
+        <ul>
+          <li><strong>Company registration:</strong> Government business registry sites</li>
+          <li><strong>Immigration/Visa:</strong> Official immigration authority websites</li>
+          <li><strong>Funding ecosystem:</strong> Industry reports, accelerator sites, VC databases</li>
+          <li><strong>Market data:</strong> Industry associations, market research reports</li>
+        </ul>
       </div>
     </section>
 
     <footer>
-      <div class="container" style="padding: 0;">
-        This page is intended for internal research notes. It is not legal or immigration advice.
-      </div>
+      <p>This page is intended for internal research notes. It is not legal or immigration advice.</p>
+      <p class="small">Data is saved locally in your browser using localStorage.</p>
     </footer>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
