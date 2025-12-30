@@ -16,6 +16,21 @@
     panels.forEach((panel) => {
       panel.hidden = panel.id !== activePanelId;
     });
+
+    // Update URL with query string
+    const tabName = activePanelId.replace('tab-', '');
+    const url = new URL(window.location);
+    url.searchParams.set('tab', tabName);
+    window.history.pushState({}, '', url);
+  }
+
+  /**
+   * Get active tab from URL or default
+   */
+  function getActiveTabFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get('tab');
+    return tabParam ? `tab-${tabParam}` : 'tab-final';
   }
 
   /**
@@ -29,6 +44,10 @@
         setTab(targetPanel);
       });
     });
+
+    // Set initial tab from URL or default
+    const initialTab = getActiveTabFromUrl();
+    setTab(initialTab);
   }
 
   // Initialize when DOM is ready

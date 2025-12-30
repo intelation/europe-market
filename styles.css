@@ -286,3 +286,42 @@ pre {
   color: var(--text);
   margin-bottom: 4px;
 }
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.visa-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.visa-table thead {
+  background: var(--surface-2);
+  border-bottom: 2px solid var(--border-strong);
+}
+
+.visa-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.visa-table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.visa-table tbody tr:hover {
+  background: var(--surface-hover);
+}
+
+.visa-table tbody tr:last-child td {
+  border-bottom: none;
+}
